@@ -42,8 +42,6 @@ stages:
     - data/processed_data/y_test.csv
     - models/model.pkl
     - src/models/predict.py
-    metrics:
-    - metrics/scores.json:
-        cache: false
     outs:
+    - metrics/scores.json
     - metrics/y_test.csv
