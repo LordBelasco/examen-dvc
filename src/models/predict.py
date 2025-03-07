@@ -29,7 +29,7 @@ def train():
     with open(Path(projet_dir / "metrics/scores.json"), "w") as out_file:
         json.dump({"RMSE test": rmse}, out_file)
 
-    print(y_pred)
+    # print(y_pred)
     prediction = pd.DataFrame(y_pred, columns=["y_pred"])
     print(prediction.head())
     prediction.to_csv(Path(projet_dir / "metrics/y_test.csv"))
